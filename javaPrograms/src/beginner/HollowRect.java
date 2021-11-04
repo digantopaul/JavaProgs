@@ -1,0 +1,27 @@
+package beginner;
+//*********
+//*       *
+//*       *
+//*********
+public class HollowRect	{
+
+	public static void main(String args[])	{
+	
+		for(int i=0;i<5;i++)	{			
+			if(i>0 && i<4)	{
+				for(int j=0;j<=4;j++)	{
+					if(j==0 || j==4)	{
+						System.out.print("*");
+					} else {
+					System.out.print(" ");
+					}
+				}
+			}	else	{				
+				for(int k=0;k<5;k++)	{
+					System.out.print("*");
+				}
+			}
+		System.out.println();
+		}
+	}
+}
