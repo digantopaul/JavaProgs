@@ -7,8 +7,7 @@ public class ReverseWordsInString {
 		
 		String str = " This is not the end.";
 		
-		System.out.println("The original String is \"" + str + "\"");
-		
+		System.out.println("The original String is \"" + str + "\"");	
 		
 //		WITHOUT USING THE REVERSE() METHOD of StringBuilder Or StringBuffer
 		
