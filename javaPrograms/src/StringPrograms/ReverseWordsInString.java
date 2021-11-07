@@ -21,17 +21,22 @@ public class ReverseWordsInString {
 		
 		System.out.println("The REV String is "+ revStr);
 		
-//		USING STRING BUILDER REVERSE ON THE ENTIRE STRING
+//		USING STRING BUILDER REVERSE()
 		StringBuilder sb1 = new StringBuilder();
 		sb1.append(str);
-		System.out.println("The reversed String  NOW IS "+sb1.substring(0));				
+		System.out.println("The String  NOW IS "+sb1.substring(0));
 		sb1.reverse();
-		System.out.println("The reversed String  USING STRING BUILDER REVERSE() is "+sb1.substring(0));		
+		System.out.println("The reversed String  USING STRING BUILDER REVERSE() is "+sb1.substring(0));	
 		
-//		USING STRING BUFFER REVERSE ON THE ENTIRE STRING
+		StringBuilder sb2 = new StringBuilder(str);
+		sb2.reverse();
+		System.out.println("The reversed String with argument to StringBuilder USING STRING BUILDER REVERSE() is "+sb2.substring(0));		
+		
+//		USING STRING BUFFER REVERSE()
 		StringBuffer sbf = new StringBuffer();
 		sbf.reverse();
 		System.out.println("The reversed String USING STRING BUFFER REVERSE() is "+sbf.substring(0));
+		System.out.println("The Entire string is reversed");
 		
 	}
 
